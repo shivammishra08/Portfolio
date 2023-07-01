@@ -107,7 +107,7 @@ function reveal(){
     
 // send email
 function sendMail(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    event.preventDefault(); 
   
     Email.send({
       SecureToken: "09b84e2e-e900-411d-ba95-8b160630be54",
@@ -117,7 +117,6 @@ function sendMail(event) {
       Body: "Name: " + document.getElementById('name').value + "<br>Email: " + document.getElementById('email').value + "<br>Message: " + document.getElementById('message').value
     }).then(function () {
       alert("Mail Sent Successfully");
-      // Reset the form fields after sending the email
       document.getElementById('name').value = '';
       document.getElementById('email').value = '';
       document.getElementById('message').value = '';
