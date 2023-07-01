@@ -239,4 +239,7 @@
     .contact .container .contact-info{
         margin-bottom: 20px;
     }
+    .contact .container .contact-form{
+        margin-bottom: 40px;
+    }
 }
