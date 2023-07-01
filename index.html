@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
   </head>
   <body>
     <nav class="navbar">
@@ -30,8 +31,8 @@
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact me</a></li>
+        <li><a href="#services">Projects</a></li>
+        <li><a href="#contact">Contact me</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-stream"></i>
@@ -175,10 +176,69 @@
       </div>
   </section>
 
-<!--  -->
+<!--Contact me-->
+<section class="contact reveal" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+    </div>
+    <div class="container">
+      <div class="contact-info">
+        <div class="box">
+            <div class="icon"><i class="fa fa-map-marker"></i></div>
+            <div class="text">
+                <h3>Address</h3>
+                <p>bacd</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <div class="text">
+                <h3>Phone</h3>
+                <p>999999999999</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa fa-envelope"></i></div>
+            <div class="text">
+                <h3>Email</h3>
+                <p>bjhvfvj@chvhjbjb.com</p>
+            </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form onsubmit="sendMail(event)">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" id="name" required="required">
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="email" id="email" required="required">
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea id="message" required="required"></textarea>
+              <span>Type your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+          
+      </div>
+    </div>
+  </section>
+  
 
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <p>&copy; 2023-present <b>Portfolio</b> &middot; All Rights Reserved &middot; Made with 💖 & 🍕 by <b>༒Shivam༒</b></p>
+    </footer>
+  
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

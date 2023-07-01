@@ -500,6 +500,176 @@ html{
     margin: 10px 0 7px 0;
 }
 
+/* contact  */
+.contact{
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    
+}
+.contact .title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: -8px 0;
+    width: 180px;
+    height: 3px;
+    background: #00bcd4;
+    transform: translateX(-50%);
+}
+
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    transform: translateX(-50%);
+    color: #00bcd4;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: -6.5px;
+}
+
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.contact .container .contact-info{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 100px; */
+    margin-top: 70px;
+}
+
+.contact .container .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact .container .contact-info .box .icon{
+    min-width: 30px;
+    height: 30px;
+    background: #00bcd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 20px; 
+}
+
+.contact .container .contact-info .box .text{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact .container .contact-form{
+    width: 48%;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #00bcd4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.contact .container .contact-form h2{
+
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contact .container .contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact .container .contact-form .inputBox input,
+.contact .container .contact-form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #00bcd4;
+    outline: none;
+    resize: none;
+
+}
+
+.contact .container .contact-form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contact .container .contact-form .inputBox input:focus ~ span,
+.contact .container .contact-form .inputBox input:valid ~ span,
+.contact .container .contact-form .inputBox textarea:focus ~ span,
+.contact .container .contact-form .inputBox textarea:valid ~ span{
+    
+    color: #00bcd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact .container .contact-form .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+/* footer */
+.footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, #00c6fb 0%,  #0082e6 100%);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }
+  
   /*animation styling  */
 
 .slide-in-left {
@@ -731,7 +901,7 @@ html{
 
   .reveal{
     position: relative;
-    transform: translateY(200px);
+    transform: translateY(100px);
     opacity: 0;
     transition: all 2s ease;
   }
