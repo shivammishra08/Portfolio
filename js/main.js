@@ -59,19 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
       backSpeed: 60,
       loop: true
     });
-   
-    
-
-  
-
-  
     window.addEventListener("scroll", handleNavbarAppearance);
-  });
+});
   
-  document.getElementById('hire-me-link').addEventListener('click', function(event) {
+document.getElementById('hire-me-link').addEventListener('click', function(event) {
     event.preventDefault();
     window.location.href = 'mailto:shivam21mishra08@gmail.com';
-  });
+});
   
 window.addEventListener('scroll',reveal);
 
@@ -93,18 +87,7 @@ function reveal(){
     }
   }
 
-  var map = L.map('map').setView([37.7749, -122.4194], 12);
 
-  // Add the OpenStreetMap tile layer
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-  }).addTo(map);
-  
-  // Create a marker and add it to the map
-  L.marker([37.7749, -122.4194]).addTo(map)
-    .bindPopup('Your Desired Location')
-    .openPopup();
-    
 // send email
 function sendMail(event) {
     event.preventDefault(); 

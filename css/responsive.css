@@ -130,7 +130,13 @@
     .skills .column .bars .progress-line span:after{
         top: -20px;
     }
-
+    .services .serv-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
     
     .services .serv-content .card{
         margin: 0 auto 30px;
@@ -193,16 +199,6 @@
     }
     
 }
-@media (max-width:750px) {
-    .services .serv-content{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .services .serv-content .card{
-        width: 100%;
-    }
-    
-}
 @media(max-width:690px){
     .max-width{
         padding: 0 23px;
@@ -219,6 +215,34 @@
         padding: 12px 30px;
     }
 }
+@media screen and (max-width: 600px) {
+    .experience .timeline::after {
+    left: 31px;
+    }
+    .experience .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    .experience .container::before {
+    left: 60px;
+    border: medium solid #00bcd4;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #00bcd4 transparent transparent;
+    }
+    .experience .left::after {
+      left: 15px;
+    }
+    .experience .right::after {
+      left: 15px;
+    }
+    .experience .right {
+    left: 0%;
+    }
+    .experience .container::after {
+      font-size: 2.2rem;;
+    }
+  }
 @media(max-width:500px){
     .home .home-content .text-2{
         font-size: 50px;
