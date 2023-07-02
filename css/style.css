@@ -658,7 +658,7 @@ html{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background: linear-gradient(90deg, #00c6fb 0%,  #0082e6 100%);
-    z-index: 999;
+    z-index: 998;
     position: fixed;
     left: 0;
     bottom: 0;
